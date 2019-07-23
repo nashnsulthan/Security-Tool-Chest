@@ -1,32 +1,61 @@
-#  Awesome Blue Team Tools 
-> A collection of reworked resources, tools, and other useful things for cyber security blue teaming activities.
+# Introduction 
+Anticipating and mitigating security threats is critical during software development. This report is going to detail and investigate security vulnerabilities and mitigation strategies to help software developers build secure applications and prevent operating system leaks. This report examines common vulnerabilities, and provides relevant mitigation strategies, from several relevant perspectives, including the input environment, the algorithms and computations performed on data, examining the general behaviour of said system.
 
-Cybersecurity blue teams are groups of individuals who identify security flaws in information technology systems. The aim to verify the effectiveness of given security measures, and in turn monitor the system serves to ensure that sufficient defensive measures remain effective. 
+#  Blue Team Tools 
+> A collection of reworked resources, tools, and other useful things for cyber security blue teaming activities.
 
 ## Automation
 
 -   [Autosnort](https://github.com/da667/Autosnort)  - Series of bash shell scripts designed to install a fully functional, fully updated stand-alone snort sensor with an IDS event review console of your choice, on a variety of Linux distributions.
 -   [DShell](https://github.com/USArmyResearchLab/Dshell)  - Extensible network forensic analysis framework written in Python that enables rapid development of plugins to support the dissection of network packet captures.
 -   [Posh-VirusTotal](https://github.com/darkoperator/Posh-VirusTotal)  - PowerShell interface to VirusTotal.com APIs.
--   [censys-python](https://github.com/censys/censys-python)  - Python wrapper to the Censys REST API.
--   [python-dshield](https://github.com/rshipp/python-dshield)  - Pythonic interface to the Internet Storm Center/DShield API.
--   [python-sandboxapi](https://github.com/InQuest/python-sandboxapi)  - Minimal, consistent Python API for building integrations with malware sandboxes.
--   [python-stix2](https://github.com/oasis-open/cti-python-stix2)  - Python APIs for serializing and de-serializing Structured Threat Information eXpression (STIX) JSON content, plus higher-level APIs for common tasks.
 
 ## Communications security (COMSEC)
 
 -   [GPG Sync](https://github.com/firstlookmedia/gpgsync)  - Centralize and automate OpenPGP public key distribution, revocation, and updates amongst all members of an organization or team.
-- [AutoSSH]([https://github.com/lucasrhb/autossh](https://github.com/lucasrhb/autossh)) - Due to network restrictions, you may be unable to connect via SSH to your computer. However, you can create a permanent, auto-reconnecting tunnel. 
+-   [AutoSSH]([https://github.com/lucasrhb/autossh](https://github.com/lucasrhb/autossh)) - Due to network restrictions, you may be unable to connect via SSH to your computer. However, you can create a permanent, auto-reconnecting tunnel. 
 
 ## DevSecOps
 
--   [BlackBox](https://github.com/StackExchange/blackbox)  - Safely store secrets in Git/Mercurial/Subversion by encrypting them "at rest" using GnuPG.
--   [Cilium](https://cilium.io/)  - Open source software for transparently securing the network connectivity between application services deployed using Linux container management platforms like Docker and Kubernetes.
 -   [Clair](https://github.com/coreos/clair)  - Static analysis tool to probe for vulnerabilities introduced via application container (e.g., Docker) images.
 -   [Gauntlt](http://gauntlt.org/)  - Pentest applications during routine continuous integration build pipelines.
 -   [Git Secrets](https://github.com/awslabs/git-secrets)  - Prevents you from committing passwords and other sensitive information to a git repository.
--   [Prowler](https://github.com/toniblyx/prowler)  - Tool based on AWS-CLI commands for Amazon Web Services account security assessment and hardening.
 -   [Vault](https://www.vaultproject.io/)  - Tool for securely accessing secrets such as API keys, passwords, or certificates through a unified interface.
--   [git-crypt](https://www.agwa.name/projects/git-crypt/)  - Transparent file encryption in git; files which you choose to protect are encrypted when committed, and decrypted when checked out.
--   [SonarQube](https://sonarqube.org/)  - Continuous inspection tool that provides detailed reports during automated testing and alerts on newly introduced security vulnerabilities.
+
+#  Red Team Tools 
+> A collection of reworked resources, tools, and other useful things for cyber security red teaming activities.
+
+# Active Intelligence Gathering
+
+- [EyeWitness](https://github.com/ChrisTruncer/EyeWitness) - Is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible. 
+- [AQUATONE](https://github.com/michenriksen/aquatone) - Is a set of tools for performing reconnaissance on domain names. 
+- [Nmap](https://github.com/nmap/nmap) is used to discover hosts and services on a computer network, thus building a "map" of the network. 
+- [dnsrecon](https://github.com/darkoperator/dnsrecon) a tool DNS Enumeration Script.
+
+# Passive Intelligence Gathering
+
+- [theHarvester](https://github.com/laramies/) is a tool for gathering subdomain names, e-mail addresses, virtual hosts, open ports/ banners, and employee names from different public sources. 
+- [Metagoofil](https://github.com/laramies/metagoofil) is a tool for extracting metadata of public documents (pdf,doc,xls,ppt,etc) availables in the target websites. 
+- [SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail) Email recon made fast and easy, with a framework to build on. 
+- [pwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot) is a python script which checks if the email account has been compromised in a data breach, if the email account is compromised it proceeds to find passwords for the compromised account.
+- [GitHarvester](https://github.com/metac0rtex/GitHarvester) This tool is used for harvesting information from GitHub like google dork.
+
+## Frameworks
+- [Maltego](https://www.paterva.com/web7/downloads.php) is a unique platform developed to deliver a clear threat picture to the environment that an organization owns and operates. 
+- [SpiderFoot]( https://github.com/smicallef/spiderfoot) the open source footprinting and intelligence-gathering tool.
+- [Datasploit](https://github.com/DataSploit/datasploit)is an OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., aggregate all the raw data, and give data in multiple formats.
+
+## Delivery
+
+## Command and Control
+
+## Privilege Escalation 
+
+## Lateral Movement 
+
+## Books on hacking
+- Penetration Testing A Hands-On Introduction to Hacking
+- The Hacker Playbook 3 Practical Guide to Penetration Testing
+
+# References 
 
