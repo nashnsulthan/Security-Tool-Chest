@@ -97,7 +97,8 @@ Anticipating and mitigating security threats is critical during software develop
 - [DET (is provided AS IS)](https://github.com/sensepost/DET), is a proof of concept to perform Data Exfiltration using either single or multiple channel(s) at the same time. 
 - [DNSExfiltrator](https://github.com/Arno0x/DNSExfiltrator) allows for transfering (exfiltrate) a file over a DNS request covert channel. This is basically a data leak testing tool allowing to exfiltrate data over a covert channel. 
 
-# Staging for Blue Team
+# Blue Team Tools
+## Introduction 
 -   [Autosnort](https://github.com/da667/Autosnort)  - Series of bash shell scripts designed to install a fully functional, fully updated stand-alone snort sensor with an IDS event review console of your choice, on a variety of Linux distributions.
 -   [DShell](https://github.com/USArmyResearchLab/Dshell)  - Extensible network forensic analysis framework written in Python that enables rapid development of plugins to support the dissection of network packet captures.
 -   [Posh-VirusTotal](https://github.com/darkoperator/Posh-VirusTotal)  - PowerShell interface to VirusTotal.com APIs.
@@ -115,7 +116,8 @@ Anticipating and mitigating security threats is critical during software develop
 -   [GPG Sync](https://github.com/firstlookmedia/gpgsync) - Centralize and automate OpenPGP public key distribution, revocation, and updates amongst all members of an organization or team.
 -   [AutoSSH]([https://github.com/lucasrhb/autossh](https://github.com/lucasrhb/autossh)) - Due to network restrictions, you may be unable to connect via SSH to your computer. However, you can create a permanent, auto-reconnecting tunnel. -   [Gauntlt](http://gauntlt.org/)  - Pentest applications during routine continuous integration build pipelines.
 -   [Git Secrets](https://github.com/awslabs/git-secrets)  - Prevents you from committing passwords and other sensitive information to a git repository.
--   [Vault](https://www.vaultproject.io/)  - Tool for securely accessing secrets such as API keys, passwords, or certificates through a unified interface.## Scripts
+-   [Vault](https://www.vaultproject.io/)  - Tool for securely accessing secrets such as API keys, passwords, or certificates through a unified interface.
+## Scripts
 Under Development
 ## Books
 Under Development
