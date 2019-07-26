@@ -69,8 +69,35 @@ Anticipating and mitigating security threats is critical during software develop
 - [Sherlock](https://github.com/rasta-mouse/Sherlock) a powerShell script to quickly find missing software patches for local privilege escalation vulnerabilities. 
 - [Tokenvator](https://github.com/0xbadjuju/Tokenvator) a tool to elevate privilege with Windows Tokens.
 
-## RATS
-Under Development
+# Remote Access Tools
+- [Cobalt Strike](https://cobaltstrike.com/) is software for Adversary Simulations and Red Team Operations.
+- [Empire](https://github.com/EmpireProject/Empire) is a post-exploitation framework that includes a pure-PowerShell2.0 Windows agent, and a pure Python 2.6/2.7 Linux/OS X agent. 
+- [Metasploit Framework](https://github.com/rapid7/metasploit-framework is a computer security project that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. 
+- [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY) A post-exploitation agent powered by Python, IronPython, C#/.NET. 
+- [Pupy](https://github.com/n1nj4sec/pupy) is an opensource, cross-platform (Windows, Linux, OSX, Android) remote administration and post-exploitation tool mainly written in python. 
+- [Koadic](https://github.com/zerosum0x0/koadic) or COM Command & Control, is a Windows post-exploitation rootkit similar to other penetration testing tools such as Meterpreter and Powershell Empire. 
+- [PoshC2](https://github.com/nettitude/PoshC2_Python) is a proxy aware C2 framework written completely in PowerShell to aid penetration testers with red teaming, post-exploitation and lateral movement. 
+- [Gcat](https://github.com/byt3bl33d3r/gcat) a stealthy Python based backdoor that uses Gmail as a command and control server. 
+- [TrevorC2](https://github.com/trustedsec/trevorc2) is a legitimate website (browsable) that tunnels client/server communications for covert command execution. 
+
+### Wireless Networks
+- [Wifiphisher](https://github.com/wifiphisher/wifiphisher) is a security tool that performs Wi-Fi automatic association attacks to force wireless clients to unknowingly connect to an attacker-controlled Access Point. 
+- [mana](https://github.com/sensepost/mana) toolkit for wifi rogue AP attacks and MitM. 
+### Software For Team Communication
+- [RocketChat](https://rocket.chat) is free, unlimited and open source. Replace email & Slack with the ultimate team chat software solution. 
+- [Etherpad](https://etherpad.net) is an open source, web-based collaborative real-time editor, allowing authors to simultaneously edit a text document.
+
+## Establish Foothold
+- [Tunna](https://github.com/SECFORCE/Tunna) is tools a set of HTTP which will wrap and tunnel any TCP communication over. It can be used to restrictions bypass network in fully firewalled environments. 
+- [reGeorg](https://github.com/sensepost/reGeorg) successor to reDuh pwn, a bastion webserver and create SOCKS proxies through the DMZ Pivot.
+- [Blade](https://github.com/wonderqs/Blade) is a webshell connection tool based on console, currently under development and aims to be a choice of replacement of Chooper. 
+- [TinyShell](https://github.com/threatexpress/tinyshell) Web Shell Framework. 
+
+## Data Exfiltration
+- [CloakifyFactory & the Cloakify Toolset](https://github.com/TryCatchHCF/Cloakify) Data Exfiltration & Infiltration In Plain Sight; Evade DLP/MLS Devices; Social Engineering of Analysts; Defeat Data Whitelisting Controls; Evade AV Detection. 
+- [DET (is provided AS IS)](https://github.com/sensepost/DET), is a proof of concept to perform Data Exfiltration using either single or multiple channel(s) at the same time. 
+- [DNSExfiltrator](https://github.com/Arno0x/DNSExfiltrator) allows for transfering (exfiltrate) a file over a DNS request covert channel. This is basically a data leak testing tool allowing to exfiltrate data over a covert channel. 
+
 ## Scripts
 Under Development
 ## Books
