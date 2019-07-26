@@ -69,7 +69,7 @@ Anticipating and mitigating security threats is critical during software develop
 - [Sherlock](https://github.com/rasta-mouse/Sherlock) a powerShell script to quickly find missing software patches for local privilege escalation vulnerabilities. 
 - [Tokenvator](https://github.com/0xbadjuju/Tokenvator) a tool to elevate privilege with Windows Tokens.
 
-# Remote Access Tools
+## Remote Access Tools
 - [Cobalt Strike](https://cobaltstrike.com/) is software for Adversary Simulations and Red Team Operations.
 - [Empire](https://github.com/EmpireProject/Empire) is a post-exploitation framework that includes a pure-PowerShell2.0 Windows agent, and a pure Python 2.6/2.7 Linux/OS X agent. 
 - [Metasploit Framework](https://github.com/rapid7/metasploit-framework is a computer security project that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. 
@@ -80,10 +80,10 @@ Anticipating and mitigating security threats is critical during software develop
 - [Gcat](https://github.com/byt3bl33d3r/gcat) a stealthy Python based backdoor that uses Gmail as a command and control server. 
 - [TrevorC2](https://github.com/trustedsec/trevorc2) is a legitimate website (browsable) that tunnels client/server communications for covert command execution. 
 
-### Wireless Networks
+## Wireless Networks
 - [Wifiphisher](https://github.com/wifiphisher/wifiphisher) is a security tool that performs Wi-Fi automatic association attacks to force wireless clients to unknowingly connect to an attacker-controlled Access Point. 
 - [mana](https://github.com/sensepost/mana) toolkit for wifi rogue AP attacks and MitM. 
-### Software For Team Communication
+## Software For Team Communication
 - [RocketChat](https://rocket.chat) is free, unlimited and open source. Replace email & Slack with the ultimate team chat software solution. 
 - [Etherpad](https://etherpad.net) is an open source, web-based collaborative real-time editor, allowing authors to simultaneously edit a text document.
 
