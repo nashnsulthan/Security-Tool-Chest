@@ -98,10 +98,13 @@ Anticipating and mitigating security threats is critical during software develop
 - [DNSExfiltrator](https://github.com/Arno0x/DNSExfiltrator) allows for transfering (exfiltrate) a file over a DNS request covert channel. This is basically a data leak testing tool allowing to exfiltrate data over a covert channel. 
 
 # Blue Team Tools
-## Introduction 
--   [Autosnort](https://github.com/da667/Autosnort)  - Series of bash shell scripts designed to install a fully functional, fully updated stand-alone snort sensor with an IDS event review console of your choice, on a variety of Linux distributions.
+## Introduction
+Blue Team indviduals identify security flaws in information technology systems, verify the effectiveness of security measures, and monitor the systems to ensure that implemented defensive measures remain effective within the future. 
+
+##Automation 
+-   [Autosnort](https://github.com/da667/Autosnort) - Series of bash shell scripts designed to install a fully functional, fully updated stand-alone snort sensor with an IDS event review console of your choice, on a variety of Linux distributions.
 -   [DShell](https://github.com/USArmyResearchLab/Dshell)  - Extensible network forensic analysis framework written in Python that enables rapid development of plugins to support the dissection of network packet captures.
--   [Posh-VirusTotal](https://github.com/darkoperator/Posh-VirusTotal)  - PowerShell interface to VirusTotal.com APIs.
+-   [Posh-VirusTotal](https://github.com/darkoperator/Posh-VirusTotal) - PowerShell interface to VirusTotal.com APIs.
 
 ## Communications security (COMSEC)
 -   [GPG Sync](https://github.com/firstlookmedia/gpgsync)  - Centralize and automate OpenPGP public key distribution, revocation, and updates amongst all members of an organization or team.
@@ -114,11 +117,63 @@ Anticipating and mitigating security threats is critical during software develop
 -   [DShell](https://github.com/USArmyResearchLab/Dshell) - Extensible network forensic analysis framework written in Python that enables rapid development of plugins to support the dissection of network packet captures.
 -   [Posh-VirusTotal](https://github.com/darkoperator/Posh-VirusTotal) - PowerShell interface to VirusTotal.com APIs.
 -   [GPG Sync](https://github.com/firstlookmedia/gpgsync) - Centralize and automate OpenPGP public key distribution, revocation, and updates amongst all members of an organization or team.
--   [AutoSSH]([https://github.com/lucasrhb/autossh](https://github.com/lucasrhb/autossh)) - Due to network restrictions, you may be unable to connect via SSH to your computer. However, you can create a permanent, auto-reconnecting tunnel. -   [Gauntlt](http://gauntlt.org/)  - Pentest applications during routine continuous integration build pipelines.
+-   [AutoSSH]([https://github.com/lucasrhb/autossh](https://github.com/lucasrhb/autossh) - Due to network restrictions, you may be unable to connect via SSH to your computer. However, you can create a permanent, auto-reconnecting tunnel. 
+-   [Gauntlt](http://gauntlt.org/)- Pentest applications during routine continuous integration build pipelines.
 -   [Git Secrets](https://github.com/awslabs/git-secrets)  - Prevents you from committing passwords and other sensitive information to a git repository.
--   [Vault](https://www.vaultproject.io/)  - Tool for securely accessing secrets such as API keys, passwords, or certificates through a unified interface.
+-   [Vault](https://www.vaultproject.io/) - Tool for securely accessing secrets such as API keys, passwords, or certificates through a unified interface.
+## Incident Response tools
+- [aws_ir](www.google.com) Automates your incident response with zero security preparedness assumptions.
+IR management consoles
+- [CIRTKit](www.google.com) Scriptable Digital Forensics and Incident Response (DFIR) toolkit built on Viper.
+- [Fast Incident Response (FIR)](www.google.com) Cybersecurity incident management platform allowing for easy creation, tracking, and reporting of cybersecurity incidents.
+- [Rekall](www.google.com) Advanced forensic and incident response framework.
+- [TheHive](www.google.com) Scalable, free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, and CERTs, featuring tight integration with MISP.
+- [threat_note](www.google.com) Web application built by Defense Point Security to allow security researchers the ability to add and retrieve indicators related to their research.
+Evidence collection
+- [AutoMacTC](www.google.com) Modular, automated forensic triage collection framework designed to access various forensic artifacts on macOS, parse them, and present them in formats viable for analysis.
+- [OSXAuditor](www.google.com) Free macOS computer forensics tool.
+- [OSXCollector](www.google.com) Forensic evidence collection & analysis toolkit for macOS.
+- [ir-rescue](www.google.com) Windows Batch script and a Unix Bash script to comprehensively collect host forensic data during incident response.
+- [Margarita Shotgun](www.google.com) Command line utility (that works with or without Amazon EC2 instances) to parallelize remote memory acquisition.
+
+# Threat hunting
+- [CimSweep](www.google.com) Suite of CIM/WMI-based tools enabling remote incident response and hunting operations across all versions of Windows.
+- [DeepBlueCLI](www.google.com) PowerShell module for hunt teaming via Windows Event logs.
+- [GRR Rapid Response](www.google.com) Incident response framework focused on remote live forensics consisting of a Python agent installed on assets and Python-based server infrastructure enabling analysts to quickly triage attacks and perform analysis remotely.
+- [Hunting ELK (HELK)](www.google.com) All-in-one Free Software threat hunting stack based on Elasticsearch, Logstash, Kafka, and Kibana with various built-in integrations for analytics including Jupyter Notebook.
+- [Mozilla InvestiGator (MIG)](www.google.com) Platform to perform investigative surgery on remote endpoints.
+- [PSHunt](www.google.com) PowerShell module designed to scan remote endpoints for indicators of compromise or survey them for more comprehensive information related to state of those systems.
+- [PowerForensics](www.google.com) All in one PowerShell-based platform to perform live hard disk forensic analysis.
+- [rastrea2r](www.google.com) Multi-platform tool for triaging suspected IOCs on many endpoints simultaneously and that integrates with antivirus consoles.
+- [Redline](www.google.com) Freeware endpoint auditing and analysis tool that provides host-based investigative capabilities, offered by FireEye, Inc.
+- [Scout2](www.google.com) Security tool that lets Amazon Web Services administrators assess their environment's security posture.
+
+## Network perimeter defenses
+- [fwknop](www.google.com) Protects ports via Single Packet Authorization in your firewall.
+- [ssh-audit](www.google.com) Simple tool that makes quick recommendations for improving an SSH server's security posture.
+- [OPNsense](www.google.com) FreeBSD based firewall and routing platform.
+- [pfSense](www.google.com) Firewall and router FreeBSD distribution.
+- [Computer Aided Investigative Environment (CAINE)](www.google.com) Italian GNU/Linux live distribution that pre-packages numerous digital forensics and evidence collection tools.
+- [Security Onion](www.google.com) Free and open source GNU/Linux distribution for intrusion detection, enterprise security monitoring, and log management.
+
+## Books
+- [Advanced Penetration Testing](www.google.com)
+- [The Basics of Web Hacking](www.google.com)
+- [The Basics of Hacking and Penetration Testing](www.google.com)
+- [The Art of Deception by Kevin Mitnick](www.google.com)
+- [SQL Injection Attacks and Defenses](www.google.com)
+- [Metasploit - The Penetration Tester's Guide](www.google.com)
+- [Ethical Hacking and Penetration Testing Guide](www.google.com)
+- [Network Attacks and Exploitation - A Framework](www.google.com)
+- [Python Web Penetration Testing Cookbook](www.google.com)
+- [Wireshark for Security Professionals](www.google.com)
+- [Mastering Modern Web Penetration Testing](www.google.com)
+- [The Shellcoder's Handbook](www.google.com)
+- [The Little Black Book of Computer Viruses](www.google.com)
+- [XSS Attacks - Cross Site Scripting Exploits and Defense](www.google.com)
+- [The Web Application Hacker's Handbook](www.google.com)
+- [Ethical Hacking and Countermeasures](www.google.com)
+- [Reversing - Secrets of Reverse Engineering](www.google.com)
+
 ## Scripts
 Under Development
-## Books
-Under Development
-
