@@ -101,7 +101,7 @@ Anticipating and mitigating security threats is critical during software develop
 ## Introduction
 Blue Team indviduals identify security flaws in information technology systems, verify the effectiveness of security measures, and monitor the systems to ensure that implemented defensive measures remain effective within the future. 
 
-##Automation 
+## Automation 
 -   [Autosnort](https://github.com/da667/Autosnort) - Series of bash shell scripts designed to install a fully functional, fully updated stand-alone snort sensor with an IDS event review console of your choice, on a variety of Linux distributions.
 -   [DShell](https://github.com/USArmyResearchLab/Dshell)  - Extensible network forensic analysis framework written in Python that enables rapid development of plugins to support the dissection of network packet captures.
 -   [Posh-VirusTotal](https://github.com/darkoperator/Posh-VirusTotal) - PowerShell interface to VirusTotal.com APIs.
