@@ -105,9 +105,7 @@ the DDE, macro-less command execution technique. <https://github.com/0xdeadbeefJ
 
 **EvilClippy** A cross-platform assistant for creating malicious MS Office documents. Can hide VBA macros, stomp VBA code (via P-Code) and confuse macro analysis tools. Runs on Linux, OSX and Windows. <https://github.com/outflanknl/EvilClippy>
 
-## Delivery
-
-### Phishing
+## Phishing
 **King Phisher** is a tool for testing and promoting user awareness by simulating real world phishing attacks. <https://github.com/securestate/king-phisher>
 
 **FiercePhish** is a full-fledged phishing framework to manage all phishing engagements. It allows you to track separate phishing campaigns, schedule sending of emails, and much more. <https://github.com/Raikia/FiercePhish>
@@ -321,82 +319,6 @@ Evidence collection <https://www.google.com>
 - [The Web Application Hacker's Handbook](www.google.com)
 - [Ethical Hacking and Countermeasures](www.google.com)
 - [Reversing - Secrets of Reverse Engineering](www.google.com)
-
-# Malware Analysis Techniques
-
-## Basic Static Analysis:
-Basic static analysis consists of examining the executable file. This is the process of viewing the actual instructions within the application. Basic static analysis can confirm whether a file is malicious and provide the necessary important information on the malware’s functionality. 
-
-## Basic Dynamic Analysis: 
-This is a technique that involves physically running the given malware and observing its behaviour on the system. Doing so in turn allows us to remove the infection, produce effective signatures, or both. Placing breakpoints in critical areas allows for a better understanding of the software without causing infection. 
-
-# Important: 
-Before being able to run malware safely we need to ensure a safe and secure  environment. Having such an environment allows for the ability to study the running Malware without a risk of damaging system or network architecture. 
-
-## Advanced Static Analysis:
-Analysis Advanced static analysis consists of reverse-engineering malware's internals by loading the executable into a disassembler. Placing the malware into a disassembler allows for the ability to look at program instructions in order to discover the underlying program functions. The instructions are executed by the CPU, so advanced static analysis tells you exactly what the program does. 
-
-### Hashing
-Hashing is a common method used to uniquely identify malware. 
-
-Use the hash as a label. 
-Share that hash with other analysts to help them to identify malware. 
-Search for that hash online to see if the file has already been identified.
-
-### Hashing Tools
-MD5Deep (Link) http://md5deep.sourceforge.net/
-WinMD5 (Link) http://www.winmd5.com/
-
-## Packing
-Malware writers often use packing as a means of obfuscation in making their files  harder to detect and analyse. When a packed program runs, a small wrapper program also runs in the background to decompress the packed file and then run the unpacked file. When a packed program is analysed the only small wrapper program can be examined in understanding what is going on. 
-
-## DLL Architecture
-
-### Kernel32.dll
-This is a very common DLL that contains core functionality, such as access and manipulation of memory, files, and hardware. 
-
-### Advapi32.dll
-This DLL provides access to advanced core Windows components such as the Service Manager and Registry.
-
-### User32.dll
-This DLL contains all the user-interface components, such as buttons, scroll bars, and components for controlling and responding to user actions. 
-
-### Gdi32.dll
-This DLL contains functions for displaying and manipulating graphics.
-
-### Ntdll.dll
-This DLL is the interface to the Windows kernel. 
-
-### WSock32.dll and Ws2_32.dll
-These are networking DLLs. A program that accesses either of these most likely connects to a network or performs network-related tasks.
-
-### Wininet.dll
-This DLL contains higher-level networking functions. 
-
-## Best Tools
--   Dissasembler – IDA Pro
--   Debugger – OllyDbg, WinDbg
--   System Monitor – Process Monitor, RegShot. Process Explorer
--   Network Monitor – TCP View, Wireshark
--   Packer Identifier – PEID
--   Unpacking Tools – Qunpack. GUNPacker
--   Binary Analysis Tools – PE Explorer, Malcode Analysts Pack
--   Code Analysis Tools – LordPE, ImpRec
-
-## X86 Architecture
-The x86 architecture is an instruction set architecture. It is a set of computer processors that were developed by the Intel Corporation. x86 architecture defines how a processor handles and executes different instructions on a computer by setting standards on application execution. 
-1) EAX: Extended Accumulator Register
-2) EBX: Extended Base Register
-3) ECD: Extended Counter Register
-4) EDX: Extended Data Register 
-5) ESI: Extended Source Index 
-6) EDI: Extended Destination Index 
-7) EBP: Extended Base Pointer
-8) ESP: Extended Stack Pointer
-9) POP, syntax: pop dest
-10) PUSH, syntax: push var/reg
-
-The POP instruction pops a value or memory address which is the name in the stack.  Additionally it also increments the stack pointer to point to the new top of the stack. The PUSH instruction pushes a value to the stack and decrements the stack pointer to point to the new top.
 
 ## Conclusion 
 Whether it is to start a new career or just simple curiosity, learning about Malware Analysis can be a very challenging and rewarding path. It can test your patience, concentration and sometimes even your temper, but the payoff when you have been working on a file for hours and finally come across the key function or piece of data you were looking for, cannot be duplicated by anything else.
