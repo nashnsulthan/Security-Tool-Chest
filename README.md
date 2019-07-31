@@ -36,7 +36,7 @@ Anticipating and mitigating security threats is critical during software develop
 
 **Onion service** with the same name. <https://github.com/davidtavarez/pwndb/>
 
-### Frameworks
+## Frameworks
 
 **Maltego** is a unique platform developed to deliver a clear threat picture to the environment that an organization owns and operates. <https://www.paterva.com/web7/downloads.php>
 
@@ -126,13 +126,11 @@ the DDE, macro-less command execution technique. <https://github.com/0xdeadbeefJ
 
 **Evilginx** is a man-in-the-middle attack framework used for phishing credentials and session cookies of any web service. <https://github.com/kgretzky/evilginx>
 
-### Watering Hole Attack
+## Watering Hole Attack
 
 **BeEF** is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser. <https://github.com/beefproject/beef>
 
-## Command and Control
-
-### Remote Access Tools
+## Remote Access Tools
 **Cobalt Strike** is software for Adversary Simulations and Red Team Operations. <https://cobaltstrike.com/>
 
 **Empire** is a post-exploitation framework that includes a pure-PowerShell2.0 Windows agent, and a pure Python 2.6/2.7 Linux/OS X agent. <https://github.com/EmpireProject/Empire>
@@ -221,7 +219,6 @@ the DDE, macro-less command execution technique. <https://github.com/0xdeadbeefJ
  <https://github.com/n1nj4sec/pupy>
 
 ## Establish Foothold
-
 **Tunna** is tools a set of HTTP which will wrap and tunnel any TCP communication over. It can be used to restrictions bypass network in fully firewalled environments. <https://github.com/SECFORCE/Tunna>
 
 **reGeorg** successor to reDuh pwn, a bastion webserver and create SOCKS proxies through the DMZ Pivot. <https://github.com/sensepost/reGeorg>
@@ -229,6 +226,54 @@ the DDE, macro-less command execution technique. <https://github.com/0xdeadbeefJ
 **Blade** is a webshell connection tool based on console, currently under development and aims to be a choice of replacement of Chooper. <https://github.com/wonderqs/Blade>
 
 **TinyShell**  Web Shell Framework. <https://github.com/threatexpress/tinyshell> 
+
+## Adversary Simulation
+**MITRE CALDERA** An automated adversary emulation system that performs post-compromise adversarial behavior within Windows Enterprise networks. <https://github.com/mitre/caldera>
+
+**APTSimulator** A Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised. <https://github.com/NextronSystems/APTSimulator>
+
+**Atomic Red Team** Small and highly portable detection tests mapped to the Mitre ATT&CK Framework. <https://github.com/redcanaryco/atomic-red-team>
+
+**Network Flight Simulator** flightsim is a lightweight utility used to generate malicious network traffic and help security teams to evaluate security controls and network visibility. <https://github.com/alphasoc/flightsim>
+
+**Metta** A security preparedness tool to do adversarial simulation. <https://github.com/uber-common/metta>
+
+**Red Team Automation (RTA)** RTA provides a framework of scripts designed to allow blue teams to test their detection capabilities against malicious tradecraft, modeled after MITRE ATT&CK. <https://github.com/endgameinc/RTA>
+
+###Wireless Networks
+**Wifiphisher** is a security tool that performs Wi-Fi automatic association attacks to force wireless clients to unknowingly connect to an attacker-controlled Access Point. <https://github.com/wifiphisher/wifiphisher>
+
+**mana toolkit** for wifi rogue AP attacks and MitM. <https://github.com/sensepost/mana>
+
+### Embedded & Peripheral Devices Hacking
+**magspoof** a portable device that can spoof/emulate any magnetic stripe, credit card or hotel card "wirelessly", even on standard magstripe (non-NFC/RFID) readers. <https://github.com/samyk/magspoof>
+
+**WarBerryPi** was built to be used as a hardware implant during red teaming scenarios where we want to obtain as much information as possible in a short period of time with being as stealth as possible. <https://github.com/secgroundzero/warberry>
+
+**P4wnP1** is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W (required for HID backdoor). <https://github.com/mame82/P4wnP1>
+
+**malusb HID spoofing multI** OS payload for Teensy. <https://github.com/ebursztein/malusb>
+
+**Fenrir** is a tool designed to be used "out-of-the-box" for penetration tests and offensive engagements. Its main feature and purpose is to bypass wired 802.1x protection and to give you an access to the target network. <https://github.com/Orange-Cyberdefense/fenrir-ocd>
+
+**poisontap** exploits locked/password protected computers over USB, drops persistent WebSocket-based backdoor, exposes internal router, and siphons cookies using Raspberry Pi Zero & Node.js. 
+<https://github.com/samyk/poisontap>
+
+**WHID WiFi HID Injector** An USB Rubberducky / BadUSB On Steroids. <https://github.com/whid-injector/WHID>
+
+## Software For Team Communication
+**RocketChat** is free, unlimited and open source. Replace email & Slack with the ultimate team chat software solution. <https://rocket.chat>
+
+**Etherpad** is an open source, web-based collaborative real-time editor, allowing authors to simultaneously edit a text document <https://etherpad.net>
+
+## Log Aggregation
+**RedELK Red Team's SIEM** easy deployable tool for Red Teams used for tracking and alarming about Blue Team activities as well as better usability in long term operations. <https://github.com/outflanknl/RedELK/>
+
+**CobaltSplunk Splunk** Dashboard for CobaltStrike logs. <https://github.com/vysec/CobaltSplunk>
+
+**Red Team Telemetry** A collection of scripts and configurations to enable centralized logging of red team infrastructure. <https://github.com/ztgrace/red_team_telemetry>
+
+**Elastic** for Red Teaming Repository of resources for configuring a Red Team SIEM using Elastic. <https://github.com/SecurityRiskAdvisors/RedTeamSIEM>
 
 # Blue Team Tools
 ![Image description](https://www.infoa.com/wp-content/uploads/2016/05/Cyber_Security_Framework_v.3_Web.png)
@@ -249,7 +294,7 @@ Blue Team individuals identify security flaws in information technology systems,
 
 **Posh-VirusTotal** PowerShell interface to VirusTotal.com APIs. <https://github.com/darkoperator/Posh-VirusTotal>
 
-## Communications security (COMSEC)
+## Communications Security (COMSEC)
 **GPG Sync** Centralize and automate OpenPGP public key distribution, revocation, and updates amongst all members of an organization or team. <https://github.com/firstlookmedia/gpgsync>
 
 **AutoSSH**  Due to network restrictions, you may be unable to connect via SSH to your computer. However, you can create a permanent, auto-reconnecting tunnel. 
@@ -277,7 +322,7 @@ Blue Team individuals identify security flaws in information technology systems,
 
 **Vault** Tool for securely accessing secrets such as API keys, passwords, or certificates through a unified interface. <https://www.vaultproject.io/>
 
-## Incident Response tools
+## Incident Response Tools
 **aws_ir** Automates your incident response with zero security preparedness assumptions. <https://www.google.com>
 
 **CIRTKit**  Scriptable Digital Forensics and Incident Response (DFIR) toolkit built on Viper.v <https://www.google.com>
