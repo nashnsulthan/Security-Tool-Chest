@@ -20,12 +20,11 @@ ________________________________________________________________________________
 ### Active Intelligence Gathering
 Under this method, the targeted organization may become aware of the ongoing reconnaissance process since the pentester is actively engaging with the target. During this phase, he takes an active part in mapping network infrastructure, then he enumerates and/or scans the open services for vulnerabilities, and eventually searches for unpublished directories, files and servers. Other similar activities include OS Fingerprinting, Banner grabbing, and Web server application scan.
 * **Nmap** is used to discover hosts and services on a computer network, thus building a "map" of the network. https://github.com/nmap/nmap
-
-* **dnsrecon** a tool DNS Enumeration Script. https://github.com/darkoperator/dnsrecon***** **EyeWitness** is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible. https://github.com/ChrisTruncer/EyeWitness
+* **dnsrecon** a tool DNS Enumeration Script. https://github.com/darkoperator/dnsrecon****
+* **EyeWitness** is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible. https://github.com/ChrisTruncer/EyeWitness
 * **AWSBucketDump** is a tool to quickly enumerate AWS S3 buckets to look for loot. https://github.com/jordanpotti/AWSBucketDump
 * **AQUATONE** is a set of tools for performing reconnaissance on domain names. https://github.com/michenriksen/aquatone
 * **spoofcheck** a program that checks if a domain can be spoofed from. The program checks SPF and DMARC records for weak configurations that allow spoofing. https://github.com/BishopFox/spoofcheck
-
 
 ### Passive Intelligence Gathering
 This option is under discussion provided that there is an explicit demand for the gathering activities not to be detected by the target. In this regard, the pentester cannot use tools that send traffic to the targeted company neither from his host nor an “anonymous” one across the Internet. Not only will that be technically burdening but also the person who performs the pentest will have to substantiate his findings with whatever he can dig out from archived or stored information, which is at times not up to date and incorrect because it has been limited to inquiries collected from third parties.
@@ -48,6 +47,7 @@ In computer programming, a software framework is an abstraction in which softwar
 
 ## Social Engineering in the Context of Intelligence Gathering
 Social engineering is deemed one of the most widespread avenues for gathering information on a particular individual or a firm. A lot of information is out there – just check the popular social media websites. Also, websites like Pipl, PeekYou, and Spokeo may come in handy as they will provide access to email addresses, locations, phone numbers, and even family tree information.
+
 * **Eavesdropping** 
 * **Shoulder Surfing** 
 
