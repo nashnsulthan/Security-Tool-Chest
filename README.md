@@ -252,14 +252,14 @@ This DLL contains higher-level networking functions.
 ## X86 Architecture
 The x86 architecture is an instruction set architecture. It is a set of computer processors that were developed by the Intel Corporation. x86 architecture defines how a processor handles and executes different instructions on a computer by setting standards on application execution.
 
-* ** EAX: **Extended Accumulator Register
-* ** EBX:** Extended Base Register
-* ** ECD:** Extended Counter Register
-* ** EDX:** Extended Data Register 
-* ** ESI:** Extended Source Index 
-* ** EDI:** Extended Destination Index 
-* ** EBP:** Extended Base Pointer
-* ** ESP: **Extended Stack Pointer
+* **EAX:**Extended Accumulator Register
+* **EBX:** Extended Base Register
+* **ECD:** Extended Counter Register
+* **EDX:** Extended Data Register 
+* **ESI:** Extended Source Index 
+* **EDI:** Extended Destination Index 
+* **EBP:** Extended Base Pointer
+* **ESP:** Extended Stack Pointer
 
 The POP instruction pops a value or memory address which is the name in the stack.  Additionally it also increments the stack pointer to point to the new top of the stack. The PUSH instruction pushes a value to the stack and decrements the stack pointer to point to the new top.
 
@@ -286,17 +286,17 @@ https://www.crest-approved.org/wp-content/uploads/2014/07/CBEST-Implementation-G
 https://abs.org.sg/docs/library/abs-red-team-adversarial-attack-simulation-exercises-guidelines-v1-06766a69f299c69658b7dff00006ed795.pdf
 * **Acunetix. What is Google Hacking?** Available at https://www.acunetix.com/websitesecurity/google-hacking/ (12/06/2016)
 * **Czumak, M. (2014). Passive Reconnaissance.** Available at http://www.securitysift.com/passive-reconnaissance/ (12/06/2016)
-* **fr4nc1stein (2015). Google Dorks: **An Easy Way of Hacking. Available at https://www.cybrary.it/0p3n/google-dorks-easy-way-of-hacking/ (12/06/2016)
-* **Hack Cave. The Basics of Penetration Testing. **Available at http://www.hackcave.net/2015/11/the-basics-of-penetration-testing.html (12/06/2016)
-* **Gianchandani, P. (2011). DNS Hacking (Beginner to Advanced). **Available at http://resources.infosecinstitute.com/dns-hacking/ (12/06/2016)
-* **Google Hacker (2015). Using Google as a website vulnerability scanner. **Available at http://www.ghackingdb.com/using-google-as-a-website-vulnerability-scanner/ (12/06/2016)
+* **fr4nc1stein (2015). Google Dorks:** An Easy Way of Hacking. Available at https://www.cybrary.it/0p3n/google-dorks-easy-way-of-hacking/ (12/06/2016)
+* **Hack Cave. The Basics of Penetration Testing.** vailable at http://www.hackcave.net/2015/11/the-basics-of-penetration-testing.html (12/06/2016)
+* **Gianchandani, P. (2011). DNS Hacking (Beginner to Advanced).** Available at http://resources.infosecinstitute.com/dns-hacking/ (12/06/2016)
+* **Google Hacker (2015). Using Google as a website vulnerability scanner.** Available at http://www.ghackingdb.com/using-google-as-a-website-vulnerability-scanner/ (12/06/2016)
 * **Gupta, T. (2010). 5 penetration test tools to secure your network.** Available at www.computerweekly.com/tip/5-penetration-test-tools-to-secure-your-network (12/06/2016)
 * **Rumy, S. (2016). Enumerating DNS records with DNSenum Tool in Kali Linux.** Available at http://rumyittips.com/enumerating-dns-records-with-dnsenum-tool-in-kali-linux/ (12/06/2016)
 * **Tech-FAQ (2016). Reverse DNS.** Available at http://www.tech-faq.com/reverse-dns.html (12/06/2016)
-* **Tech-FAQ (2016). How to Perform a DNS Lookup. **Available at http://www.tech-faq.com/how-to-perform-a-dns-lookup.html (12/06/2016)
-* **True Demon (2015). The Hacker Ethos. **Available at https://books.google.bg/books?id=-xhPCwAAQBAJ&pg=PT180&lpg=PT180&dq=eavesdropping+information+gathering&source=bl&ots=wYqDq-XtpT&sig=uYOpP8XI9-IVgm_DJZbCWqIxgGI&hl=bg&sa=X&ved=0ahUKEwiqm-W4vKrNAhUDtBQKHZkoAus4ChDoAQgzMAI#v=onepage&q=eavesdropping%20information%20gathering&f=false (12/06/2016)
-* **Wing (2014). 15 Penetration Testing Tools-Open Source. **Available at http://securitywing.com/15-penetration-testing-tools-open-source/ (12/06/2016)
-* **Vines, R. (2016). Penetration testing reconnaissance — Footprinting, scanning and enumerating. **Available at http://searchitchannel.techtarget.com/tip/Penetration-testing-reconnaissance-Footprinting-scanning-and-enumerating (12/06/2016)
+* **Tech-FAQ (2016). How to Perform a DNS Lookup.** Available at http://www.tech-faq.com/how-to-perform-a-dns-lookup.html (12/06/2016)
+* **True Demon (2015). The Hacker Ethos.** Available at https://books.google.bg/books?id=-xhPCwAAQBAJ&pg=PT180&lpg=PT180&dq=eavesdropping+information+gathering&source=bl&ots=wYqDq-XtpT&sig=uYOpP8XI9-IVgm_DJZbCWqIxgGI&hl=bg&sa=X&ved=0ahUKEwiqm-W4vKrNAhUDtBQKHZkoAus4ChDoAQgzMAI#v=onepage&q=eavesdropping%20information%20gathering&f=false (12/06/2016)
+* **Wing (2014). 15 Penetration Testing Tools-Open Source.** Available at http://securitywing.com/15-penetration-testing-tools-open-source/ (12/06/2016)
+* **Vines, R. (2016). Penetration testing reconnaissance — Footprinting, scanning and enumerating.** Available at http://searchitchannel.techtarget.com/tip/Penetration-testing-reconnaissance-Footprinting-scanning-and-enumerating (12/06/2016)
 
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
