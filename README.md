@@ -123,18 +123,6 @@ a teamserver or controller, domains, redirectors, and a Phishing server. https:/
 * **PowerDNS** is a simple proof of concept to demonstrate the execution of PowerShell script using DNS only. https://github.com/mdsecactivebreach/PowerDNS
 * **Chameleon** a tool for evading Proxy categorisation. https://github.com/mdsecactivebreach/Chameleon
 * **CatMyFish** Search for categorized domain that can be used during red teaming engagement. Perfect to setup whitelisted domain for your Cobalt Strike beacon C&C. https://github.com/Mr-Un1k0d3r/CatMyFish
-* **Malleable C2** is a domain specific language to redefine indicators in Beacon's communication. https://github.com/rsmudge/Malleable-C2-Profiles
-* **Malleable-C2-Randomizer** This script randomizes Cobalt Strike Malleable C2 profiles through the use of a metalanguage, hopefully reducing the chances of flagging signature-based detection controls. https://github.com/bluscreenofjeff/Malleable-C2-Randomizer
-* **FindFrontableDomains** search for potential frontable domains. https://github.com/rvrsh3ll/FindFrontableDomains
-* **Postfix-Server-Setup** Setting up a phishing server is a very long and tedious process. It can take hours to setup, and can be compromised in minutes. https://github.com/n0pe-sled/Postfix-Server-Setup
-* **DomainFrontingLists** a list of Domain Frontable Domains by CDN. https://github.com/vysec/DomainFrontingLists
-* **Apache2-Mod-Rewrite-Setup** Quickly Implement Mod-Rewrite in your infastructure. https://github.com/n0pe-sled/Apache2-Mod-Rewrite-Setup
-* **mod_rewrite rule** to evade vendor sandboxes. https://gist.github.com/curi0usJack/971385e8334e189d93a6cb4671238b10
-* **external_c2 framework** a python framework for usage with Cobalt Strike's External C2. https://github.com/Und3rf10w/external_c2_framework
-* **ExternalC2** a library for integrating communication channels with the Cobalt Strike External C2 server. https://github.com/ryhanson/ExternalC2
-* **cs2modrewrite** a tools for convert Cobalt Strike profiles to modrewrite scripts. https://github.com/threatexpress/cs2modrewrite
-* **e2modrewrite** a tools for convert Empire profiles to Apache modrewrite scripts. https://github.com/infosecn1nja/e2modrewrite
-* **redi** automated script for setting up CobaltStrike redirectors (nginx reverse proxy, letsencrypt). https://github.com/taherio/redi
 * **DomainFrontDiscover** Scripts and results for finding domain frontable CloudFront domains. https://github.com/peewpw/DomainFrontDiscover
 * **Automated Empire Infrastructure** https://github.com/bneg/RedTeam-Automation
 * **Serving Random Payloads** with NGINX. https://gist.github.com/jivoi/a33ace2e25515a31aa2ffbae246d98c9
@@ -188,8 +176,8 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **DAMP** The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification.
 https://github.com/HarmJ0y/DAMP
 
-## Escalate Privileges
-### Domain Escalation
+## Privilege Escalation
+Privilege escalation is the act of exploiting a bug, design flaw or configuration oversight in an operating system or software application to gain elevated access to resources that are normally protected from an application or user. 
 * **PowerView** is a PowerShell tool to gain network situational awareness on Windows domains. https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1
 * **Get-GPPPassword** Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences. https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1
 * **Invoke-ACLpwn** is a tool that automates the discovery and pwnage of ACLs in Active Directory that are unsafe configured. https://github.com/fox-it/Invoke-ACLPwn
@@ -229,12 +217,14 @@ Data exfiltration occurs when malware and/or a malicious actor carries out an un
 * **Etherpad** is an open source, web-based collaborative real-time editor, allowing authors to simultaneously edit a text document https://etherpad.net
 
 ### Log Aggregation
+Log aggregation is a valuable tool, but it isn't normally a good tool for time-series data. A log aggregation system is a great place for collecting event data. These are irregular activities that are significant. An example might be access logs for a web service.
 * **RedELK** Red Team's SIEM - easy deployable tool for Red Teams used for tracking and alarming about Blue Team activities as well as better usability in long term operations. https://github.com/outflanknl/RedELK/
 * **CobaltSplunk** Splunk Dashboard for CobaltStrike logs. https://github.com/vysec/CobaltSplunk
 * **Red Team Telemetry** A collection of scripts and configurations to enable centralized logging of red team infrastructure. https://github.com/ztgrace/red_team_telemetry
 * **Elastic for Red Teaming** Repository of resources for configuring a Red Team SIEM using Elastic. https://github.com/SecurityRiskAdvisors/RedTeamSIEM
 
 ## DLL Architecture
+Dynamic linking is a mechanism that links applications to libraries at run time. The libraries remain in their own files and are not copied into the executable files of the applications. DLLs link to an application when the application is run, rather than when it is created.
 ### Kernel32.dll
 This is a very common DLL that contains core functionality, such as access and manipulation of memory, files, and hardware. 
 ### Advapi32.dll
@@ -250,14 +240,14 @@ These are networking DLLs. A program that accesses either of these most likely c
 ### Wininet.dll
 This DLL contains higher-level networking functions. 
 ## Best Tools
--   **Dissasembler** – IDA Pro
--   **Debugger** – OllyDbg, WinDbg
--   **System Monitor** – Process Monitor, RegShot. Process Explorer
--   **Network Monitor** – TCP View, Wireshark
--   **Packer Identifier** – PEID
--   **Unpacking Tools** – Qunpack. GUNPacker
--   **Binary Analysis Tools** – PE Explorer, Malcode Analysts Pack
--   **Code Analysis Tools** – LordPE, ImpRec
+* **Dissasembler** – IDA Pro
+* **Debugger** – OllyDbg, WinDbg
+* **System Monitor** – Process Monitor, RegShot. Process Explorer
+* **Network Monitor** – TCP View, Wireshark
+* **Packer Identifier** – PEID
+* **Unpacking Tools** – Qunpack. GUNPacker
+* **Binary Analysis Tools** – PE Explorer, Malcode Analysts Pack
+* **Code Analysis Tools** – LordPE, ImpRec
 
 ## X86 Architecture
 The x86 architecture is an instruction set architecture. It is a set of computer processors that were developed by the Intel Corporation. x86 architecture defines how a processor handles and executes different instructions on a computer by setting standards on application execution.
@@ -307,5 +297,6 @@ https://abs.org.sg/docs/library/abs-red-team-adversarial-attack-simulation-exerc
 * **True Demon (2015). The Hacker Ethos. **Available at https://books.google.bg/books?id=-xhPCwAAQBAJ&pg=PT180&lpg=PT180&dq=eavesdropping+information+gathering&source=bl&ots=wYqDq-XtpT&sig=uYOpP8XI9-IVgm_DJZbCWqIxgGI&hl=bg&sa=X&ved=0ahUKEwiqm-W4vKrNAhUDtBQKHZkoAus4ChDoAQgzMAI#v=onepage&q=eavesdropping%20information%20gathering&f=false (12/06/2016)
 * **Wing (2014). 15 Penetration Testing Tools-Open Source. **Available at http://securitywing.com/15-penetration-testing-tools-open-source/ (12/06/2016)
 * **Vines, R. (2016). Penetration testing reconnaissance — Footprinting, scanning and enumerating. **Available at http://searchitchannel.techtarget.com/tip/Penetration-testing-reconnaissance-Footprinting-scanning-and-enumerating (12/06/2016)
+
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
