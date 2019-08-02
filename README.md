@@ -1,4 +1,4 @@
-# Red Teaming Toolkit
+# Security Tool Chest
 
 Anticipating and mitigating security threats is critical during software development. This paper is going to detail and investigate security vulnerabilities and mitigation strategies to help software developers build secure applications and prevent operating system leaks. This paper examines common vulnerabilities, and provides relevant mitigation strategies, from several relevant perspectives. This paper hopes to encompasses the cyber Kill chain as part of the five stage compramision stages, displaying relevant tools, books and strategies at each stage.
 ___________________________________________________________________________________________________________
@@ -14,66 +14,57 @@ ________________________________________________________________________________
 * [Establish Foothold](#establish-foothold)
 * [Escalate Privileges](#escalate-privileges)
 * [Data Exfiltration](#data-exfiltration)
-* [Misc](#misc)
 * [References](#references)
 
 ## Reconnaissance
 ### Active Intelligence Gathering
-* **EyeWitness** is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible. https://github.com/ChrisTruncer/EyeWitness
+Under this method, the targeted organization may become aware of the ongoing reconnaissance process since the pentester is actively engaging with the target. During this phase, he takes an active part in mapping network infrastructure, then he enumerates and/or scans the open services for vulnerabilities, and eventually searches for unpublished directories, files and servers. Other similar activities include OS Fingerprinting, Banner grabbing, and Web server application scan.
+* **Nmap** is used to discover hosts and services on a computer network, thus building a "map" of the network. https://github.com/nmap/nmap
+
+* **dnsrecon** a tool DNS Enumeration Script. https://github.com/darkoperator/dnsrecon***** **EyeWitness** is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible. https://github.com/ChrisTruncer/EyeWitness
 * **AWSBucketDump** is a tool to quickly enumerate AWS S3 buckets to look for loot. https://github.com/jordanpotti/AWSBucketDump
 * **AQUATONE** is a set of tools for performing reconnaissance on domain names. https://github.com/michenriksen/aquatone
 * **spoofcheck** a program that checks if a domain can be spoofed from. The program checks SPF and DMARC records for weak configurations that allow spoofing. https://github.com/BishopFox/spoofcheck
-* **Nmap** is used to discover hosts and services on a computer network, thus building a "map" of the network. https://github.com/nmap/nmap
-* **dnsrecon** a tool DNS Enumeration Script. https://github.com/darkoperator/dnsrecon
+
 
 ### Passive Intelligence Gathering
-* **Social Mapper** OSINT Social Media Mapping Tool, takes a list of names & images (or LinkedIn company name) and performs automated target searching on a huge scale across multiple social media sites. Not restricted by APIs as it instruments a browser using Selenium. Outputs reports to aid in correlating targets across sites. https://github.com/SpiderLabs/social_mapper
-* **skiptracer** OSINT scraping framework, utilizes some basic python webscraping (BeautifulSoup) of PII paywall sites to compile passive information on a target on a ramen noodle budget. https://github.com/xillwillx/skiptracer
-* **ScrapedIn** a tool to scrape LinkedIn without API restrictions for data reconnaissance. https://github.com/dchrastil/ScrapedIn
+This option is under discussion provided that there is an explicit demand for the gathering activities not to be detected by the target. In this regard, the pentester cannot use tools that send traffic to the targeted company neither from his host nor an “anonymous” one across the Internet. Not only will that be technically burdening but also the person who performs the pentest will have to substantiate his findings with whatever he can dig out from archived or stored information, which is at times not up to date and incorrect because it has been limited to inquiries collected from third parties.
 * **linkScrape** A LinkedIn user/company enumeration tool. https://github.com/NickSanzotta/linkScrape
 * **FOCA** (Fingerprinting Organizations with Collected Archives) is a tool used mainly to find metadata and hidden information in the documents its scans. https://github.com/ElevenPaths/FOCA
 * **theHarvester** is a tool for gathering subdomain names, e-mail addresses, virtual
 hosts, open ports/ banners, and employee names from different public sources. https://github.com/laramies/theHarvester
 * **Metagoofil** is a tool for extracting metadata of public documents (pdf,doc,xls,ppt,etc) availables in the target websites. https://github.com/laramies/metagoofil
-* **SimplyEmail** Email recon made fast and easy, with a framework to build on. https://github.com/killswitch-GUI/SimplyEmail
-* **truffleHog** searches through git repositories for secrets, digging deep into commit history and branches.  https://github.com/dxa4481/truffleHog
-* **Just-Metadata** is a tool that gathers and analyzes metadata about IP addresses. It attempts to find relationships between systems within a large dataset. https://github.com/ChrisTruncer/Just-Metadata
+* **Social Mapper** OSINT Social Media Mapping Tool, takes a list of names & images (or LinkedIn company name) and performs automated target searching on a huge scale across multiple social media sites. Not restricted by APIs as it instruments a browser using Selenium. Outputs reports to aid in correlating targets across sites. https://github.com/SpiderLabs/social_mapper
+* **skiptracer** OSINT scraping framework, utilizes some basic python webscraping (BeautifulSoup) of PII paywall sites to compile passive information on a target on a ramen noodle budget. https://github.com/xillwillx/skiptracer
 * **typofinder** a finder of domain typos showing country of IP address. https://github.com/nccgroup/typofinder
 * **pwnedOrNot** is a python script which checks if the email account has been compromised in a data breach, if the email account is compromised it proceeds to find passwords for the compromised account. https://github.com/thewhiteh4t/pwnedOrNot
-* **GitHarvester** This tool is used for harvesting information from GitHub like google dork. https://github.com/metac0rtex/GitHarvester
-* **pwndb** is a python command-line tool for searching leaked credentials using the Onion service with the same name. https://github.com/davidtavarez/pwndb/
 
 ### Frameworks
+In computer programming, a software framework is an abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software. A software framework provides a standard way to build and deploy applications.
 * **Maltego** is a unique platform developed to deliver a clear threat picture to the environment that an organization owns and operates. https://www.paterva.com/web7/downloads.php
 * **SpiderFoot** the open source footprinting and intelligence-gathering tool. https://github.com/smicallef/spiderfoot
 * **datasploit** is an OSINT Framework to perform various recon techniques on Companies, People, Phone Number, Bitcoin Addresses, etc., aggregate all the raw data, and give data in multiple formats. https://github.com/DataSploit/datasploit
 * **Recon-ng** is a full-featured Web Reconnaissance framework written in Python. https://bitbucket.org/LaNMaSteR53/recon-ng
 
+## Social Engineering in the Context of Intelligence Gathering
+Social engineering is deemed one of the most widespread avenues for gathering information on a particular individual or a firm. A lot of information is out there – just check the popular social media websites. Also, websites like Pipl, PeekYou, and Spokeo may come in handy as they will provide access to email addresses, locations, phone numbers, and even family tree information.
+* **Eavesdropping** 
+* **Shoulder Surfing** 
+
 ## Weaponization
-* **WinRAR Remote Code Execution** Proof of Concept exploit for CVE-2018-20250. https://github.com/WyAtu/CVE-2018-20250
-* **Composite Moniker** Proof of Concept exploit for CVE-2017-8570. https://github.com/rxwx/CVE-2017-8570
-* **Exploit toolkit CVE-2017-8759** is a handy python script which provides pentesters and security researchers a quick and effective way to test Microsoft .NET Framework RCE. https://github.com/bhdresh/CVE-2017-8759
-* **CVE-2017-11882 Exploit** accepts over 17k bytes long command/code in maximum. https://github.com/unamer/CVE-2017-11882
-* **Adobe Flash Exploit** CVE-2018-4878. https://github.com/anbai-inc/CVE-2018-4878
-* **Exploit toolkit CVE-2017-0199** is a handy python script which provides pentesters and security researchers a quick and effective way to test Microsoft Office RCE. https://github.com/bhdresh/CVE-2017-0199
+The cyber attacker does not interact with the intended victim. Instead, they create their attack. For example, the attacker may create an infected Microsoft Office document paired with a customized phishing email, or perhaps they create a new strain of self-replicating malware to be distributed via USB drive. There are few security controls, including security awareness, that may impact or neutralize this stage, unless the cyber attacker does some limited testing on the intended target.
 * **demiguise** is a HTA encryption tool for RedTeams. https://github.com/nccgroup/demiguise
 * **Office-DDE-Payloads** collection of scripts and templates to generate Office documents embedded with the DDE, macro-less command execution technique. https://github.com/0xdeadbeefJERKY/Office-DDE-Payloads
 * **CACTUSTORCH** Payload Generation for Adversary Simulations. https://github.com/mdsecactivebreach/CACTUSTORCH
 * **SharpShooter** is a payload creation framework for the retrieval and execution of arbitrary CSharp source code. https://github.com/mdsecactivebreach/SharpShooter
 * **Don't kill my cat** is a tool that generates obfuscated shellcode that is stored inside of polyglot images. The image is 100% valid and also 100% valid shellcode. https://github.com/Mr-Un1k0d3r/DKMC
 * **Malicious Macro Generator Utility** Simple utility design to generate obfuscated macro that also include a AV / Sandboxes escape mechanism. https://github.com/Mr-Un1k0d3r/MaliciousMacroGenerator
-* **SCT Obfuscator** Cobalt Strike SCT payload obfuscator. https://github.com/Mr-Un1k0d3r/SCT-obfuscator
-* **Invoke-Obfuscation** PowerShell Obfuscator. https://github.com/danielbohannon/Invoke-Obfuscation
-* **Invoke-CradleCrafter** PowerShell remote download cradle generator and obfuscator. https://github.com/danielbohannon/Invoke-CradleCrafter
 * **Invoke-DOSfuscation** cmd.exe Command Obfuscation Generator & Detection Test Harness. https://github.com/danielbohannon/Invoke-DOSfuscation
 * **morphHTA** Morphing Cobalt Strike's evil.HTA. https://github.com/vysec/morphHTA
 * **Unicorn** is a simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. https://github.com/trustedsec/unicorn
 * **Shellter** is a dynamic shellcode injection tool, and the first truly dynamic PE infector ever created. https://www.shellterproject.com/
 * **EmbedInHTML** Embed and hide any file in an HTML file. https://github.com/Arno0x/EmbedInHTML
 * **SigThief** Stealing Signatures and Making One Invalid Signature at a Time. https://github.com/secretsquirrel/SigThief
-* **Veil** is a tool designed to generate metasploit payloads that bypass common anti-virus solutions. https://github.com/Veil-Framework/Veil
-* **CheckPlease** Sandbox evasion modules written in PowerShell, Python, Go, Ruby, C, C#, Perl, and Rust. https://github.com/Arvanaghi/CheckPlease
-* **Invoke-PSImage** is a tool to embeded a PowerShell script in the pixels of a PNG file and generates a oneliner to execute. https://github.com/peewpw/Invoke-PSImage
 * **LuckyStrike** a PowerShell based utility for the creation of malicious Office macro documents. To be used for pentesting or educational purposes only. https://github.com/curi0usJack/luckystrike
 * **ClickOnceGenerator** Quick Malicious ClickOnceGenerator for Red Team. The default application a simple WebBrowser widget that point to a website of your choice. https://github.com/Mr-Un1k0d3r/ClickOnceGenerator
 * **macro_pack** is a tool by @EmericNasi used to automatize obfuscation and generation of MS Office documents, VB scripts, and other formats for pentest, demo, and social engineering assessments. https://github.com/sevagas/macro_pack
@@ -84,47 +75,26 @@ hosts, open ports/ banners, and employee names from different public sources. ht
 * **Phishery** is a Simple SSL Enabled HTTP server with the primary purpose of phishing credentials via Basic Authentication.  https://github.com/ryhanson/phishery
 * **PowerShdll** run PowerShell with rundll32. Bypass software restrictions. https://github.com/p3nt4/PowerShdll
 * **Ultimate AppLocker ByPass List** The goal of this repository is to document the most common techniques to bypass AppLocker. https://github.com/api0cradle/UltimateAppLockerByPassList
-* **Ruler** is a tool that allows you to interact with Exchange servers remotely, through either the MAPI/HTTP or RPC/HTTP protocol. https://github.com/sensepost/ruler
-* **Generate-Macro** is a standalone PowerShell script that will generate a malicious Microsoft Office document with a specified payload and persistence method. https://github.com/enigma0x3/Generate-Macro
-* **Malicious Macro MSBuild Generator** Generates Malicious Macro and Execute Powershell or Shellcode via MSBuild Application Whitelisting Bypass. https://github.com/infosecn1nja/MaliciousMacroMSBuild
-* **Meta Twin** is designed as a file resource cloner. Metadata, including digital signature, is extracted from one file and injected into another. https://github.com/threatexpress/metatwin
-* **WePWNise** generates architecture independent VBA code to be used in Office documents or templates and automates bypassing application control and exploit mitigation software. https://github.com/mwrlabs/wePWNise
-* **DotNetToJScript** a tool to create a JScript file which loads a .NET v2 assembly from memory. https://github.com/tyranid/DotNetToJScript
-* **PSAmsi** is a tool for auditing and defeating AMSI signatures. https://github.com/cobbr/PSAmsi
-* **Reflective DLL injection** is a library injection technique in which the concept of reflective programming is employed to perform the loading of a library from memory into a host process. https://github.com/stephenfewer/ReflectiveDLLInjection
 * **ps1encode** use to generate and encode a powershell based metasploit payloads. https://github.com/CroweCybersecurity/ps1encode
 * **Worse PDF** turn a normal PDF file into malicious. Use to steal Net-NTLM Hashes from windows machines. https://github.com/3gstudent/Worse-PDF
-* **SpookFlare** has a different perspective to bypass security measures and it gives you the opportunity to bypass the endpoint countermeasures at the client-side detection and network-side detection. https://github.com/hlldz/SpookFlare
-* **GreatSCT** is an open source project to generate application white list bypasses. This tool is intended for BOTH red and blue team. https://github.com/GreatSCT/GreatSCT
-* **nps** running powershell without powershell. https://github.com/Ben0xA/nps
-* **Meterpreter_Paranoid_Mode.sh** allows users to secure your staged/stageless connection for Meterpreter by having it check the certificate of the handler it is connecting to. https://github.com/r00t-3xp10it/Meterpreter_Paranoid_Mode-SSL
-* **The Backdoor Factory (BDF)** is to patch executable binaries with user desired shellcode and continue normal execution of the prepatched state. https://github.com/secretsquirrel/the-backdoor-factory
-* **MacroShop** a collection of scripts to aid in delivering payloads via Office Macros. https://github.com/khr0x40sh/MacroShop
-* **UnmanagedPowerShell** Executes PowerShell from an unmanaged process. https://github.com/leechristensen/UnmanagedPowerShell
-* **evil-ssdp** Spoof SSDP replies to phish for NTLM hashes on a network. Creates a fake UPNP device, tricking users into visiting a malicious phishing page. https://gitlab.com/initstring/evil-ssdp
-* **Ebowla** Framework for Making Environmental Keyed Payloads. https://github.com/Genetic-Malware/Ebowla
-* **make-pdf-embedded** a tool to create a PDF document with an embedded file. https://github.com/DidierStevens/DidierStevensSuite/blob/master/make-pdf-embedded.py
-* **avet** (AntiVirusEvasionTool) is targeting windows machines with executable files using different evasion techniques. https://github.com/govolution/avet
-* **EvilClippy** A cross-platform assistant for creating malicious MS Office documents. Can hide VBA macros, stomp VBA code (via P-Code) and confuse macro analysis tools. Runs on Linux, OSX and Windows. https://github.com/outflanknl/EvilClippy
+
 
 ## Delivery
+Transmission of the attack to the intended victim(s). For example, this would be sending the actual phishing email or distributing the infected USB drives at a local coffee shop or cafe. While there is an entire technical industry dedicated to stopping this stage, people also play a critical role.
 ### Phishing
+Phishing is the fraudulent attempt to obtain sensitive information such as usernames, passwords and credit card details by disguising oneself as a trustworthy entity in an electronic communication.
+* **PwnAuth** a web application framework for launching and managing OAuth abuse campaigns. https://github.com/fireeye/PwnAuth
+* **Phishing Frenzy** Ruby on Rails Phishing Framework. https://github.com/pentestgeek/phishing-frenzy
 * **King Phisher** is a tool for testing and promoting user awareness by simulating real world phishing attacks. https://github.com/securestate/king-phisher
 * **FiercePhish** is a full-fledged phishing framework to manage all phishing engagements. It allows you to track separate phishing campaigns, schedule sending of emails, and much more. https://github.com/Raikia/FiercePhish
 * **ReelPhish** is a Real-Time Two-Factor Phishing Tool. https://github.com/fireeye/ReelPhish/
 * **Gophish** is an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training. https://github.com/gophish/gophish
 * **CredSniper** is a phishing framework written with the Python micro-framework Flask and Jinja2 templating which supports capturing 2FA tokens. https://github.com/ustayready/CredSniper
-* **PwnAuth** a web application framework for launching and managing OAuth abuse campaigns. https://github.com/fireeye/PwnAuth
-* **Phishing Frenzy** Ruby on Rails Phishing Framework. https://github.com/pentestgeek/phishing-frenzy
-* **Phishing Pretexts** a library of pretexts to use on offensive phishing engagements. https://github.com/L4bF0x/PhishingPretexts
-* **Modlishka** is a flexible and powerful reverse proxy, that will take your ethical phishing campaigns to the next level. https://github.com/drk1wi/Modlishka
-* **Evilginx** is a man-in-the-middle attack framework used for phishing credentials and session cookies of any web service. https://github.com/kgretzky/evilginx
-
-### Watering Hole Attack
 * **BeEF** is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser. https://github.com/beefproject/beef
 
 ## Command and Control
 ### Remote Access Tools
+In computing, the term remote desktop refers to a software or operating system feature that allows a personal computer's desktop environment to be run remotely on one system, while being displayed on a separate client device. Remote desktop applications have varying features.
 * **Cobalt Strike** is software for Adversary Simulations and Red Team Operations. https://cobaltstrike.com/
 * **Empire** is a post-exploitation framework that includes a pure-PowerShell2.0 Windows agent, and a pure Python 2.6/2.7 Linux/OS X agent. https://github.com/EmpireProject/Empire
 * **Metasploit Framework** is a computer security project that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. https://github.com/rapid7/metasploit-framework
@@ -165,20 +135,13 @@ a teamserver or controller, domains, redirectors, and a Phishing server. https:/
 * **cs2modrewrite** a tools for convert Cobalt Strike profiles to modrewrite scripts. https://github.com/threatexpress/cs2modrewrite
 * **e2modrewrite** a tools for convert Empire profiles to Apache modrewrite scripts. https://github.com/infosecn1nja/e2modrewrite
 * **redi** automated script for setting up CobaltStrike redirectors (nginx reverse proxy, letsencrypt). https://github.com/taherio/redi
-* **cat-sites** Library of sites for categorization. https://github.com/audrummer15/cat-sites
-* **ycsm** is a quick script installation for resilient redirector using nginx reverse proxy and letsencrypt compatible with some popular Post-Ex Tools (Cobalt Strike, Empire, Metasploit, PoshC2). https://github.com/infosecn1nja/ycsm
-* **Domain Fronting Google App Engine**. https://github.com/redteam-cyberark/Google-Domain-fronting
 * **DomainFrontDiscover** Scripts and results for finding domain frontable CloudFront domains. https://github.com/peewpw/DomainFrontDiscover
 * **Automated Empire Infrastructure** https://github.com/bneg/RedTeam-Automation
 * **Serving Random Payloads** with NGINX. https://gist.github.com/jivoi/a33ace2e25515a31aa2ffbae246d98c9
 * **meek** is a blocking-resistant pluggable transport for Tor. It encodes a
 data stream as a sequence of HTTPS requests and responses. https://github.com/arlolra/meek
 * **CobaltStrike-ToolKit** Some useful scripts for CobaltStrike. https://github.com/killswitch-GUI/CobaltStrike-ToolKit
-* **mkhtaccess_red** Auto-generate an HTaccess for payload delivery -- automatically pulls ips/nets/etc from known sandbox companies/sources that have been seen before, and redirects them to a benign payload. https://github.com/violentlydave/mkhtaccess_red
-* **RedFile** a flask wsgi application that serves files with intelligence, good for serving conditional RedTeam payloads. https://github.com/outflanknl/RedFile
-* **keyserver** Easily serve HTTP and DNS keys for proper payload protection. https://github.com/leoloobeek/keyserver
-* **DoHC2** allows the ExternalC2 library from Ryan Hanson (https://github.com/ryhanson/ExternalC2) to be leveraged for command and control (C2) via DNS over HTTPS (DoH). This is built for the popular Adversary Simulation and Red Team Operations Software Cobalt Strike (https://www.cobaltstrike.com). https://github.com/SpiderLabs/DoHC2
-* **HTran** is a connection bouncer, a kind of proxy server. A “listener” program is hacked stealthily onto an unsuspecting host anywhere on the Internet. https://github.com/HiwinCN/HTran
+
 
 ## Lateral Movement
 * **CrackMapExec** is a swiss army knife for pentesting networks. https://github.com/byt3bl33d3r/CrackMapExec
@@ -189,6 +152,9 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **DeathStar** is a Python script that uses Empire's RESTful API to automate gaining Domain Admin rights in Active Directory environments using a variety of techinques. https://github.com/byt3bl33d3r/DeathStar
 * **SharpHound** C# Rewrite of the BloodHound Ingestor. https://github.com/BloodHoundAD/SharpHound
 * **BloodHound.py** is a Python based ingestor for BloodHound, based on Impacket. https://github.com/fox-it/BloodHound.py
+* **NetRipper** is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption. https://github.com/NytroRST/NetRipper
+* **LethalHTA** Lateral Movement technique using DCOM and HTA. https://github.com/codewhitesec/LethalHTA
+* **Invoke-PowerThIEf** an Internet Explorer Post Exploitation library. https://github.com/nettitude/Invoke-PowerThIEf
 * **Responder** is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication. https://github.com/SpiderLabs/Responder
 * **SessionGopher** is a PowerShell tool that uses WMI to extract saved session information for remote access tools such as WinSCP, PuTTY, SuperPuTTY, FileZilla, and Microsoft Remote Desktop. It can be run remotely or locally. https://github.com/fireeye/SessionGopher
 * **PowerSploit** is a collection of Microsoft PowerShell modules that can be used to aid penetration testers during all phases of an assessment. https://github.com/PowerShellMafia/PowerSploit
@@ -209,9 +175,6 @@ data stream as a sequence of HTTPS requests and responses. https://github.com/ar
 * **Living Off The Land Binaries and Scripts (and now also Libraries)** The goal of these lists are to document every binary, script and library that can be used for other purposes than they are designed to. https://github.com/api0cradle/LOLBAS
 * **WSUSpendu** for compromised WSUS server to extend the compromise to clients. https://github.com/AlsidOfficial/WSUSpendu
 * **Evilgrade** is a modular framework that allows the user to take advantage of poor upgrade implementations by injecting fake updates. https://github.com/infobyte/evilgrade
-* **NetRipper** is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption. https://github.com/NytroRST/NetRipper
-* **LethalHTA** Lateral Movement technique using DCOM and HTA. https://github.com/codewhitesec/LethalHTA
-* **Invoke-PowerThIEf** an Internet Explorer Post Exploitation library. https://github.com/nettitude/Invoke-PowerThIEf
 * **RedSnarf** is a pen-testing / red-teaming tool for Windows environments. https://github.com/nccgroup/redsnarf
 * **HoneypotBuster** Microsoft PowerShell module designed for red teams that can be used to find honeypots and honeytokens in the network or at the host. https://github.com/JavelinNetworks/HoneypotBuster
 * **PAExec** lets you launch Windows programs on remote Windows computers without needing to install software on the remote computer first. https://www.poweradmin.com/paexec/
@@ -251,38 +214,15 @@ https://github.com/l0ss/Grouper
 * **The Elevate Kit** demonstrates how to use third-party privilege escalation attacks with Cobalt Strike's Beacon payload. https://github.com/rsmudge/ElevateKit
 * **Sherlock** a powerShell script to quickly find missing software patches for local privilege escalation vulnerabilities.
  https://github.com/rasta-mouse/Sherlock
-* **Tokenvator** a tool to elevate privilege with Windows Tokens. https://github.com/0xbadjuju/Tokenvator
 
 ## Data Exfiltration
+Data exfiltration occurs when malware and/or a malicious actor carries out an unauthorized data transfer from a computer. It is also commonly called data extrusion or data exportation. Data exfiltration is also considered a form of data theft.
 * **CloakifyFactory** & the Cloakify Toolset - Data Exfiltration & Infiltration In Plain Sight; Evade DLP/MLS Devices; Social Engineering of Analysts; Defeat Data Whitelisting Controls; Evade AV Detection. https://github.com/TryCatchHCF/Cloakify
 * **DET** (is provided AS IS), is a proof of concept to perform Data Exfiltration using either single or multiple channel(s) at the same time. https://github.com/sensepost/DET
 * **DNSExfiltrator** allows for transfering (exfiltrate) a file over a DNS request covert channel. This is basically a data leak testing tool allowing to exfiltrate data over a covert channel. https://github.com/Arno0x/DNSExfiltrator
 * **PyExfil** a Python Package for Data Exfiltration. https://github.com/ytisf/PyExfil
 * **Egress-Assess** is a tool used to test egress data detection capabilities. https://github.com/ChrisTruncer/Egress-Assess
 * **Powershell RAT** python based backdoor that uses Gmail to exfiltrate data as an e-mail attachment. https://github.com/Viralmaniar/Powershell-RAT
-
-## Misc
-### Adversary Simulation
-* **MITRE CALDERA** - An automated adversary emulation system that performs post-compromise adversarial behavior within Windows Enterprise networks. https://github.com/mitre/caldera
-* **APTSimulator** - A Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised. https://github.com/NextronSystems/APTSimulator
-* **Atomic Red Team** - Small and highly portable detection tests mapped to the Mitre ATT&CK Framework. https://github.com/redcanaryco/atomic-red-team
-* **Network Flight Simulator** - flightsim is a lightweight utility used to generate malicious network traffic and help security teams to evaluate security controls and network visibility. https://github.com/alphasoc/flightsim
-* **Metta** - A security preparedness tool to do adversarial simulation. https://github.com/uber-common/metta
-* **Red Team Automation (RTA)** - RTA provides a framework of scripts designed to allow blue teams to test their detection capabilities against malicious tradecraft, modeled after MITRE ATT&CK. https://github.com/endgameinc/RTA
-
-### Wireless Networks
-* **Wifiphisher** is a security tool that performs Wi-Fi automatic association attacks to force wireless clients to unknowingly connect to an attacker-controlled Access Point. https://github.com/wifiphisher/wifiphisher
-* **mana** toolkit for wifi rogue AP attacks and MitM. https://github.com/sensepost/mana
-
-### Embedded & Peripheral Devices Hacking
-* **magspoof** a portable device that can spoof/emulate any magnetic stripe, credit card or hotel card "wirelessly", even on standard magstripe (non-NFC/RFID) readers. https://github.com/samyk/magspoof
-* **WarBerryPi** was built to be used as a hardware implant during red teaming scenarios where we want to obtain as much information as possible in a short period of time with being as stealth as possible. https://github.com/secgroundzero/warberry
-* **P4wnP1** is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W (required for HID backdoor). https://github.com/mame82/P4wnP1
-* **malusb** HID spoofing multi-OS payload for Teensy. https://github.com/ebursztein/malusb
-* **Fenrir** is a tool designed to be used "out-of-the-box" for penetration tests and offensive engagements. Its main feature and purpose is to bypass wired 802.1x protection and to give you an access to the target network. https://github.com/Orange-Cyberdefense/fenrir-ocd
-* **poisontap** exploits locked/password protected computers over USB, drops persistent WebSocket-based backdoor, exposes internal router, and siphons cookies using Raspberry Pi Zero & Node.js. https://github.com/samyk/poisontap
-* **WHID** WiFi HID Injector - An USB Rubberducky / BadUSB On Steroids.
-https://github.com/whid-injector/WHID
 
 ### Software For Team Communication
 * **RocketChat** is free, unlimited and open source. Replace email & Slack with the ultimate team chat software solution. https://rocket.chat
@@ -294,13 +234,44 @@ https://github.com/whid-injector/WHID
 * **Red Team Telemetry** A collection of scripts and configurations to enable centralized logging of red team infrastructure. https://github.com/ztgrace/red_team_telemetry
 * **Elastic for Red Teaming** Repository of resources for configuring a Red Team SIEM using Elastic. https://github.com/SecurityRiskAdvisors/RedTeamSIEM
 
-### C# Offensive Framework
-* **SharpSploit** is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers. https://github.com/cobbr/SharpSploit
-* **GhostPack** is (currently) a collection various C# implementations of previous PowerShell functionality, and includes six separate toolsets being released today- Seatbelt, SharpUp, SharpRoast, SharpDump, SafetyKatz, and SharpWMI. https://github.com/GhostPack
-* **SharpWeb** .NET 2.0 CLR project to retrieve saved browser credentials from Google Chrome, Mozilla Firefox and Microsoft Internet Explorer/Edge. https://github.com/djhohnstein/SharpWeb
-* **reconerator** C# Targeted Attack Reconnissance Tools. https://github.com/stufus/reconerator
-* **SharpView** C# implementation of harmj0y's PowerView. https://github.com/tevora-threat/SharpView
-* **Watson** is a (.NET 2.0 compliant) C# implementation of Sherlock. https://github.com/rasta-mouse/Watson
+## DLL Architecture
+### Kernel32.dll
+This is a very common DLL that contains core functionality, such as access and manipulation of memory, files, and hardware. 
+### Advapi32.dll
+This DLL provides access to advanced core Windows components such as the Service Manager and Registry.
+### User32.dll
+This DLL contains all the user-interface components, such as buttons, scroll bars, and components for controlling and responding to user actions. 
+### Gdi32.dll
+This DLL contains functions for displaying and manipulating graphics.
+### Ntdll.dll
+This DLL is the interface to the Windows kernel. 
+### WSock32.dll and Ws2_32.dll
+These are networking DLLs. A program that accesses either of these most likely connects to a network or performs network-related tasks.
+### Wininet.dll
+This DLL contains higher-level networking functions. 
+## Best Tools
+-   **Dissasembler** – IDA Pro
+-   **Debugger** – OllyDbg, WinDbg
+-   **System Monitor** – Process Monitor, RegShot. Process Explorer
+-   **Network Monitor** – TCP View, Wireshark
+-   **Packer Identifier** – PEID
+-   **Unpacking Tools** – Qunpack. GUNPacker
+-   **Binary Analysis Tools** – PE Explorer, Malcode Analysts Pack
+-   **Code Analysis Tools** – LordPE, ImpRec
+
+## X86 Architecture
+The x86 architecture is an instruction set architecture. It is a set of computer processors that were developed by the Intel Corporation. x86 architecture defines how a processor handles and executes different instructions on a computer by setting standards on application execution.
+
+* ** EAX: **Extended Accumulator Register
+* ** EBX:** Extended Base Register
+* ** ECD:** Extended Counter Register
+* ** EDX:** Extended Data Register 
+* ** ESI:** Extended Source Index 
+* ** EDI:** Extended Destination Index 
+* ** EBP:** Extended Base Pointer
+* ** ESP: **Extended Stack Pointer
+
+The POP instruction pops a value or memory address which is the name in the stack.  Additionally it also increments the stack pointer to point to the new top of the stack. The PUSH instruction pushes a value to the stack and decrements the stack pointer to point to the new top.
 
 ## References
 * **MITRE’s ATT&CK™** is a curated knowledge base and model for cyber adversary behavior, reflecting the various phases of an adversary’s lifecycle and the platforms they are known to target. https://attack.mitre.org/wiki/Main_Page
@@ -323,6 +294,18 @@ https://github.com/whid-injector/WHID
 https://www.crest-approved.org/wp-content/uploads/2014/07/CBEST-Implementation-Guide.pdf
 * **Red Team: Adversarial Attack Simulation Exercise Guidelines for the Financial Industry in Singapore** The Association of Banks in Singapore (ABS), with support from the Monetary Authority of Singapore (MAS), has developed a set of cybersecurity assessment guidelines today to strengthen the cyber resilience of the financial sector in Singapore. Known as the Adversarial Attack Simulation Exercises (AASE) Guidelines or “Red Teaming” Guidelines, the Guidelines provide financial institutions (FIs) with best practices and guidance on planning and conducting Red Teaming exercises to enhance their security testing.
 https://abs.org.sg/docs/library/abs-red-team-adversarial-attack-simulation-exercises-guidelines-v1-06766a69f299c69658b7dff00006ed795.pdf
-
+* **Acunetix. What is Google Hacking?** Available at https://www.acunetix.com/websitesecurity/google-hacking/ (12/06/2016)
+* **Czumak, M. (2014). Passive Reconnaissance.** Available at http://www.securitysift.com/passive-reconnaissance/ (12/06/2016)
+* **fr4nc1stein (2015). Google Dorks: **An Easy Way of Hacking. Available at https://www.cybrary.it/0p3n/google-dorks-easy-way-of-hacking/ (12/06/2016)
+* **Hack Cave. The Basics of Penetration Testing. **Available at http://www.hackcave.net/2015/11/the-basics-of-penetration-testing.html (12/06/2016)
+* **Gianchandani, P. (2011). DNS Hacking (Beginner to Advanced). **Available at http://resources.infosecinstitute.com/dns-hacking/ (12/06/2016)
+* **Google Hacker (2015). Using Google as a website vulnerability scanner. **Available at http://www.ghackingdb.com/using-google-as-a-website-vulnerability-scanner/ (12/06/2016)
+* **Gupta, T. (2010). 5 penetration test tools to secure your network.** Available at www.computerweekly.com/tip/5-penetration-test-tools-to-secure-your-network (12/06/2016)
+* **Rumy, S. (2016). Enumerating DNS records with DNSenum Tool in Kali Linux.** Available at http://rumyittips.com/enumerating-dns-records-with-dnsenum-tool-in-kali-linux/ (12/06/2016)
+* **Tech-FAQ (2016). Reverse DNS.** Available at http://www.tech-faq.com/reverse-dns.html (12/06/2016)
+* **Tech-FAQ (2016). How to Perform a DNS Lookup. **Available at http://www.tech-faq.com/how-to-perform-a-dns-lookup.html (12/06/2016)
+* **True Demon (2015). The Hacker Ethos. **Available at https://books.google.bg/books?id=-xhPCwAAQBAJ&pg=PT180&lpg=PT180&dq=eavesdropping+information+gathering&source=bl&ots=wYqDq-XtpT&sig=uYOpP8XI9-IVgm_DJZbCWqIxgGI&hl=bg&sa=X&ved=0ahUKEwiqm-W4vKrNAhUDtBQKHZkoAus4ChDoAQgzMAI#v=onepage&q=eavesdropping%20information%20gathering&f=false (12/06/2016)
+* **Wing (2014). 15 Penetration Testing Tools-Open Source. **Available at http://securitywing.com/15-penetration-testing-tools-open-source/ (12/06/2016)
+* **Vines, R. (2016). Penetration testing reconnaissance — Footprinting, scanning and enumerating. **Available at http://searchitchannel.techtarget.com/tip/Penetration-testing-reconnaissance-Footprinting-scanning-and-enumerating (12/06/2016)
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
